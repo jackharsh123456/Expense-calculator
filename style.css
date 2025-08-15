@@ -14,11 +14,14 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
-}
+} 
+  
 
 #theme-toggle{
-  padding: 2px 3px;
-  border-radius: 6px;
+  padding: 4px 7px;
+  border-radius: 15px;
+  color: teal;
+  background-color: beige;
 }
 
 header {
@@ -41,13 +44,29 @@ header {
   background: var(--card-color);
 }
 
+#transaction-form input,select,button{
+  background-color: beige;
+  color: teal;
+  padding: 4px 7px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+input::placeholder{
+  color: teal;
+}
+
+#trans{
+  padding: 5px;
+}
+
 #transactions {
   list-style: none;
   padding: 1rem;
 }
 
 .dark-mode {
-  --bg-color: #222;
-  --text-color: #fff;
+  --bg-color: #333333;
+  --text-color: #ECECEC;
   --card-color: #333;
 }
