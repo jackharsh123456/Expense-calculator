@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>💰 Personal Finance Tracker</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <section id="summary">
+    <div>Income: <span id="total-income">₹0</span></div>
+    <div>Expenses: <span id="total-expenses">₹0</span></div>
+    <div>Balance: <span id="balance">₹0</span></div>
+  </section>
+
+  <section id="transaction-form">
+    <input type="text" id="desc" placeholder="Description">
+    <input type="number" id="amount" placeholder="Amount">
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <select id="category">
+      <option>Food</option>
+      <option>Bills</option>
+      <option>Travel</option>
+      <option>Shopping</option>
+      <option>Other</option>
+    </select>
+    <button id="add-transaction">Add</button>
+  </section>
+
+  <section>
+    <h2>Transaction History</h2>
+    <ul id="transactions"></ul>
+  </section>
+
+  <section>
+    <canvas id="categoryChart"></canvas>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
