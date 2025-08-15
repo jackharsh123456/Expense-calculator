@@ -16,6 +16,11 @@ body {
   padding: 0;
 }
 
+#theme-toggle{
+  padding: 2px 3px;
+  border-radius: 6px;
+}
+
 header {
   background: var(--card-color);
   padding: 1rem;
